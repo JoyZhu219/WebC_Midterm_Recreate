@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <ul class="menu">
+        <li>
+            <a href="home.html">Home</a>
+        </li>
+        <li>
+            <a href="news.html">News/Event</a>
+        </li>
+        <li>
+            <a href="learn.html">Learn</a>
+        </li>
+        <li>
+            <a href="resort.html">Resort</a>
+        </li>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="swiper-container home-banner">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="assets/index/slider1.jpg" width="100%" alt="">
+                <div class="home-banner-content">
+                    <h2>Skiing</h2>
+                    <p>Skiing is a popular sport and it is seen as being fast and dangerous. There is something
+                        rather attractive about being able to travel effortless down a mountain while being able to
+                        appreciate magnificent views.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/index/slider2.jpg" width="100%" alt="">
+                <div class="home-banner-content">
+                    <h2>Skiing for transport, hunting, and war</h2>
+                    <p>Skiing was a prehistoric activity; the oldest known skis date to between 8000 and 7000 BCE
+                        and were discovered in Russia. Many peoples who lived in climates with snow for many months
+                        of the year developed some form of skiing. It has long been employed for military purposes
+                        from 15th century.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="assets/index/slider3.png" width="100%" alt="">
+                <div class="home-banner-content">
+                    <h2>Skiing for recreation and sport</h2>
+                    <p>Skiing both as recreation and as a sport was a natural development from its utilitarian
+                        applications. There was competitive skiing in California in the 1860s on straight downhill
+                        courses.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+
+    <div class="video about">
+        <img src="assets/index/about.png" alt="" width="100%" height="600">
+        <div id="close" class="close" onclick="closeVideo(this)">
+            ×
+        </div>
+        <div id="video-iframe" class="video-iframe">
+            <video id="video" src="https://www.youtube.com/watch?v=g0FMrjsYAzc&t=12s"></video>
+        </div>
+        <a onclick="openVideo()" class="video-popup-home" href="javascript:;">
+            <img src="assets/learn/bf.png" alt="">
+        </a>
+        <div class="text">
+            <h3>OVERVIEW</h3>
+            <p class="bold">Skiing is a means of transport using skis to glide on snow</p>
+            <p>
+                People’s first images of skiing will come from media coverage as few people live in the areas of the
+                world where skiing takes place. The picture often painted by the media is often an attractive one. The
+                people participating are seen as being fit and glamorous and they are kitted out in expensive looking
+                ski suits often accompanied by the most modern of accessories.
+            </p>
+        </div>
+    </div>
+
+    <div class="Athletes">
+        <div class="section-heading">
+            <h5>Famous</h5>
+            <div class="main-title">
+                <h2><span>Athletes</span></h2>
+                <strong></strong>
+            </div>
+        </div>
+        <div class="Athletes-swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/index/athlete1.jpg" alt="" width="255" height="380">
+                    <h3>Mikaela Shiffrin</h3>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/index/athlete2.jpg" alt="" width="255" height="380">
+                    <h3>Ted Ligety</h3>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/index/athlete3.jpg" alt="" width="255" height="380">
+                    <h3>Travis Ganong</h3>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/index/athlete4.jpg" alt="" width="255" height="380">
+                    <h3>Lindsey Vonn</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Athletes news" style="margin: 30px auto">
+        <div class="section-heading">
+            <h5>Latest</h5>
+            <div class="main-title">
+                <h2><span>News or Events</span></h2>
+                <strong></strong>
+            </div>
+        </div>
+        <div class="news-swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <p>
+                        <img src="assets/index/news1.jpg" alt="" width="100%" height="100%">
+                    </p>
+                    <div style="padding: 10px; border: 2px solid #e9e6e6; border-top: none; height: 220px;">
+                        <h5>BIG TRICKS AND PERFECT TURNS EARN SECOND FREERIDE WORLD TOUR WIN FOR AMERICAN IN AUSTRIA</h5>
+                        <p>Ross Tester has now won two competitions during his rookie Freeride World Tour season and a
+                            Polish rookie broke through in the women's field.</p>
+                    </div>
+                    <div class="READ-MORE" onclick="location.href = 'news.html'">
+                        READ MORE
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <p>
+                        <img src="assets/index/news2.png" alt="" width="100%" height="100%">
+                    </p>
+                    <div style="padding: 10px; border: 2px solid #e9e6e6; border-top: none; height: 220px;">
+                        <h5>ACCESS TO SKIING IS NOT EQUAL—HE HAS A PLAN TO CHANGE THAT</h5>
+                        <p>On skis since he was a toddler, Quincy Shannon wants to share his love for skiing with the BIPOC
+                            community and make it easier for them to experience it for themselves.</p>
+                    </div>
+                    <div class="READ-MORE">
+                        READ MORE
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <p>
+                        <img src="assets/index/news3.jpg" alt="" width="100%" height="100%">
+                    </p>
+                    <div style="padding: 10px; border: 2px solid #e9e6e6; border-top: none; height: 220px;">
+                        <h5>MIKAELA SHIFFRIN IS ‘PUSHING HER LIMITS TO KEEP UP’ IN CHANGING WORLD CUP SLALOM LANDSCAPE</h5>
+                        <p>The greatest slalom racer in history acknowledges the competition is fierce and the margin for
+                            error very, very tight.</p>
+                    </div>
+                    <div class="READ-MORE">
+                        READ MORE
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--<div class="performance">
+        <h3>Performance</h3>
+        <ul>
+            <li>
+                <img src="assets/index/project1.jpg" alt="" width="100%">
+            </li>
+            <li>
+                <img src="assets/index/project2.jpg" alt="" width="100%">
+            </li>
+            <li>
+                <img src="assets/index/project3.jpg" alt="" width="100%">
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <img src="assets/index/project4.jpg" alt="" width="100%">
+            </li>
+            <li>
+                <img src="assets/index/project5.jpg" alt="" width="100%">
+            </li>
+            <li>
+                <img src="assets/index/project6.jpg" alt="" width="100%">
+            </li>
+        </ul>
+    </div>-->
+
+</div>
+
+<div class="footer">
+
+</div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        effect: 'fade',
+        loop: true,
+        autoplay: true,
+        // pagination: {
+        //     el: '.swiper-pagination',
+        //     clickable: true,
+        // },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    var swiperAthletes = new Swiper('.Athletes-swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        speed: 2000,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+            waitForTransition: false,
+        },
+        // pagination: {
+        //     el: '.swiper-pagination',
+        //     clickable: true,
+        // },
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+    })
+
+    var swiperNews = new Swiper('.news-swiper-container', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        freeMode: true,
+        loop: true,
+        speed: 2000,
+        autoplay: {
+            delay: 1000,
+            disableOnInteraction: false,
+            waitForTransition: false,
+        },
+    })
+
+    function openVideo() {
+        let videoIframe = document.getElementById('video-iframe')
+        let video = document.getElementById('video')
+        let close = document.getElementById('close')
+        videoIframe.style.display = 'block'
+        close.style.display = 'block'
+        video.play()
+    }
+
+    function closeVideo(e) {
+        let videoIframe = document.getElementById('video-iframe')
+        let video = document.getElementById('video')
+        videoIframe.style.display = 'none'
+        e.style.display = 'none'
+        video.pause()
+    }
+</script>
+</body>
+</html>

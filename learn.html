@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>learn</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="header">
+    <ul class="menu">
+        <li>
+            <a href="home.html">Home</a>
+        </li>
+        <li>
+            <a href="news.html">News/Event</a>
+        </li>
+        <li>
+            <a href="learn.html">Learn</a>
+        </li>
+        <li>
+            <a href="resort.html">Resort</a>
+        </li>
+    </ul>
+</div>
+
+<div class="banner">
+    <img src="assets/learn/banner3.jpg" width="1920" height="750" alt="">
+    <div class="banner-content">
+        <h2>LEARN</h2>
+        <div class="banner-breadcrumb">
+            <ul>
+                <li>
+                    <a href="home.html">home </a>
+                    &nbsp;&nbsp;>&nbsp;&nbsp;
+                </li>
+                <li>Learn</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="learn-content">
+    <div class="howToSki">
+        <ul>
+            <li>
+                <p><img src="assets/learn/alpine.jpg" alt="" width="80" height="80"></p>
+                <p>Alpine</p>
+            </li>
+            <li>
+                Alpine skiing, or downhill skiing, is the pastime of sliding down snow-covered slopes on skis with
+                fixed-heel bindings, unlike other types of skiing (cross-country, Telemark, or ski jumping), which use
+                skis with free-heel bindings. Whether for recreation or for sport, it is typically practiced at ski
+                resorts, which provide such services as ski lifts, artificial snow making, snow grooming, restaurants,
+                and ski patrol.
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><img src="assets/learn/nordic.jpg" alt="" width="80" height="80"></p>
+                <p>Nordic</p>
+            </li>
+            <li>
+                The Nordic disciplines include cross-country skiing and ski jumping, which both use bindings that attach
+                at the toes of the skier's boots but not at the heels. Cross-country skiing may be practiced on groomed
+                trails or in undeveloped backcountry areas. Ski jumping is practiced in certain areas that are reserved
+                exclusively for ski jumping.
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <p><img src="assets/learn/telemark.jpg" alt="" width="80" height="80"></p>
+                <p>Telemark</p>
+            </li>
+            <li>
+                Telemark skiing is a ski turning technique and FIS-sanctioned discipline, which is named after the
+                Telemark region of Norway. It uses equipment similar to Nordic skiing, where the ski bindings are
+                attached only at the toes of the ski boots, allowing the skier's heel to be raised throughout the turn.
+                However, the skis themselves are often the same width as Alpine skis.
+            </li>
+        </ul>
+        <div class="video">
+            <img src="assets/learn/who.jpg" alt="" width="100%">
+            <div id="close" class="close" onclick="closeVideo(this)">
+                ×
+            </div>
+            <div id="video-iframe" class="video-iframe">
+                <video id="video" src="https://www.youtube.com/watch?v=MMeJsyiiifM"></video>
+            </div>
+            <div class="video-tips">
+                <a onclick="openVideo()" class="video-popup" href="javascript:;">
+                    <img src="assets/learn/bf.png" alt="">
+                </a>
+                <div class="video-tips-content">
+                    <h3>HOW TO SKI</h3>
+                    <p class="bold">
+                        Tips for your first time
+                    </p>
+                    <p>
+                        Learning to ski can open doors to a lifetime of winter fun and connection to the mountains. Why
+                        learn to ski? Skiing offers many benefits. It’s a sport you can enjoy with friends as well as the
+                        entire family, young and old. You get access to unmatched mountain terrain. Skiing also gets your
+                        heart rate up, burns calories and works your muscles.
+
+                        To make sure you get the most out of your first time, here are a few tips for first-time skiers.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openVideo() {
+        let videoIframe = document.getElementById('video-iframe')
+        let video = document.getElementById('video')
+        let close = document.getElementById('close')
+        videoIframe.style.display = 'block'
+        close.style.display = 'block'
+        video.play()
+    }
+
+    function closeVideo(e) {
+        let videoIframe = document.getElementById('video-iframe')
+        let video = document.getElementById('video')
+        videoIframe.style.display = 'none'
+        e.style.display = 'none'
+        video.pause()
+    }
+</script>
+</body>
+</html>
