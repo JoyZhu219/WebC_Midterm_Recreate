@@ -308,7 +308,7 @@ a {
 /* learn */
 .learn-content {
     margin: 100px auto;
-    width: 1140px;
+    width: 80%;
 }
 
 .learn-content .howToSki ul {
@@ -443,22 +443,22 @@ a {
 }
 
 .video .video-tips .video-tips-content {
-    width: 555px;
-    height: 333px;
+    width: 50%;
+    /*height: 333px;*/
     position: absolute;
     right: 50px;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
 }
 
 .video .video-tips .video-tips-content h3 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     position: relative;
     text-transform: uppercase;
-    margin-bottom: 28px;
-    padding-bottom: 30px;
+    margin-bottom: 10px;
+    /*!*padding-bottom: 30px;*!*/
 }
 
 .video .video-tips .video-tips-content p.bold {
@@ -466,7 +466,11 @@ a {
     font-weight: 700;
     font-family: 'Open Sans', sans-serif;
     line-height: 28px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+.video .video-tips .video-tips-content p {
+    font-size: 12px;
 }
 
 /* news */
@@ -528,7 +532,7 @@ a {
 }
 
 .news-content {
-    width: 1140px;
+    width: 80%;
     margin: 50px auto 60px;
 }
 
