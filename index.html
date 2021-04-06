@@ -10,7 +10,7 @@
 <div class="header">
     <ul class="menu">
         <li>
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
         </li>
         <li>
             <a href="news.html">News/Event</a>
@@ -67,7 +67,7 @@
             ×
         </div>
         <div id="video-iframe" class="video-iframe">
-            <video id="video" src="https://www.youtube.com/watch?v=g0FMrjsYAzc&t=12s"></video>
+            <video id="video" src="assets/video/video1.mp4"></video>
         </div>
         <a onclick="openVideo()" class="video-popup-home" href="javascript:;">
             <img src="assets/learn/bf.png" alt="">
@@ -84,7 +84,7 @@
         </div>
     </div>
 
-    <div class="Athletes">
+    <div class="Athletes model">
         <div class="section-heading">
             <h5>Famous</h5>
             <div class="main-title">
@@ -94,20 +94,52 @@
         </div>
         <div class="Athletes-swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="assets/index/athlete1.jpg" alt="" width="255" height="380">
+                <div class="swiper-slide" onmouseenter="showModel(this)">
+                    <div class="shadow">
+                        <h5>Mikaela Shiffrin</h5>
+                        <p>
+                            Mikaela Pauline Shiffrin (born March 13, 1995) is an American two-time Olympic Gold
+                            Medalist and World Cup alpine skier. She is a three-time Overall World Cup champion, a
+                            four-time world champion in slalom.
+                        </p>
+                    </div>
+                    <img src="assets/index/athlete1.jpg" alt="" width="100%" height="568">
                     <h3>Mikaela Shiffrin</h3>
                 </div>
-                <div class="swiper-slide">
-                    <img src="assets/index/athlete2.jpg" alt="" width="255" height="380">
+                <div class="swiper-slide" onclick="showModel(this)">
+                  <div class="shadow">
+                        <h5>Mikaela Shiffrin</h5>
+                        <p>
+                            Mikaela Pauline Shiffrin (born March 13, 1995) is an American two-time Olympic Gold
+                            Medalist and World Cup alpine skier. She is a three-time Overall World Cup champion, a
+                            four-time world champion in slalom.
+                        </p>
+                    </div>
+                    <img src="assets/index/athlete2.jpg" alt="" width="100%" height="568">
                     <h3>Ted Ligety</h3>
                 </div>
-                <div class="swiper-slide">
-                    <img src="assets/index/athlete3.jpg" alt="" width="255" height="380">
+                <div class="swiper-slide" onclick="showModel(this)">
+                    <div class="shadow">
+                        <h5>Mikaela Shiffrin</h5>
+                        <p>
+                            Mikaela Pauline Shiffrin (born March 13, 1995) is an American two-time Olympic Gold
+                            Medalist and World Cup alpine skier. She is a three-time Overall World Cup champion, a
+                            four-time world champion in slalom.
+                        </p>
+                    </div>
+                    <img src="assets/index/athlete3.jpg" alt="" width="100%" height="568">
                     <h3>Travis Ganong</h3>
                 </div>
-                <div class="swiper-slide">
-                    <img src="assets/index/athlete4.jpg" alt="" width="255" height="380">
+                <div class="swiper-slide" onclick="showModel(this)">
+                   <div class="shadow">
+                        <h5>Mikaela Shiffrin</h5>
+                        <p>
+                            Mikaela Pauline Shiffrin (born March 13, 1995) is an American two-time Olympic Gold
+                            Medalist and World Cup alpine skier. She is a three-time Overall World Cup champion, a
+                            four-time world champion in slalom.
+                        </p>
+                    </div>
+                    <img src="assets/index/athlete4.jpg" alt="" width="100%" height="568">
                     <h3>Lindsey Vonn</h3>
                 </div>
             </div>
@@ -129,7 +161,8 @@
                         <img src="assets/index/news1.jpg" alt="" width="100%" height="100%">
                     </p>
                     <div style="padding: 10px; border: 2px solid #e9e6e6; border-top: none; height: 220px;">
-                        <h5>BIG TRICKS AND PERFECT TURNS EARN SECOND FREERIDE WORLD TOUR WIN FOR AMERICAN IN AUSTRIA</h5>
+                        <h5>BIG TRICKS AND PERFECT TURNS EARN SECOND FREERIDE WORLD TOUR WIN FOR AMERICAN IN
+                            AUSTRIA</h5>
                         <p>Ross Tester has now won two competitions during his rookie Freeride World Tour season and a
                             Polish rookie broke through in the women's field.</p>
                     </div>
@@ -143,7 +176,8 @@
                     </p>
                     <div style="padding: 10px; border: 2px solid #e9e6e6; border-top: none; height: 220px;">
                         <h5>ACCESS TO SKIING IS NOT EQUAL—HE HAS A PLAN TO CHANGE THAT</h5>
-                        <p>On skis since he was a toddler, Quincy Shannon wants to share his love for skiing with the BIPOC
+                        <p>On skis since he was a toddler, Quincy Shannon wants to share his love for skiing with the
+                            BIPOC
                             community and make it easier for them to experience it for themselves.</p>
                     </div>
                     <div class="READ-MORE">
@@ -155,8 +189,10 @@
                         <img src="assets/index/news3.jpg" alt="" width="100%" height="100%">
                     </p>
                     <div style="padding: 10px; border: 2px solid #e9e6e6; border-top: none; height: 220px;">
-                        <h5>MIKAELA SHIFFRIN IS ‘PUSHING HER LIMITS TO KEEP UP’ IN CHANGING WORLD CUP SLALOM LANDSCAPE</h5>
-                        <p>The greatest slalom racer in history acknowledges the competition is fierce and the margin for
+                        <h5>MIKAELA SHIFFRIN IS ‘PUSHING HER LIMITS TO KEEP UP’ IN CHANGING WORLD CUP SLALOM
+                            LANDSCAPE</h5>
+                        <p>The greatest slalom racer in history acknowledges the competition is fierce and the margin
+                            for
                             error very, very tight.</p>
                     </div>
                     <div class="READ-MORE">
@@ -217,7 +253,7 @@
     });
 
     var swiperAthletes = new Swiper('.Athletes-swiper-container', {
-        slidesPerView: 4,
+        slidesPerView: 3,
         spaceBetween: 30,
         freeMode: true,
         loop: true,
@@ -227,6 +263,7 @@
             disableOnInteraction: false,
             waitForTransition: false,
         },
+
         // pagination: {
         //     el: '.swiper-pagination',
         //     clickable: true,
@@ -265,6 +302,10 @@
         videoIframe.style.display = 'none'
         e.style.display = 'none'
         video.pause()
+    }
+
+    function showModel(e) {
+        // e.style.
     }
 </script>
 </body>

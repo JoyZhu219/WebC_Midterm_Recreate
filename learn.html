@@ -9,7 +9,7 @@
 <div class="header">
     <ul class="menu">
         <li>
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
         </li>
         <li>
             <a href="news.html">News/Event</a>
@@ -84,7 +84,7 @@
                 ×
             </div>
             <div id="video-iframe" class="video-iframe">
-                <video id="video" src="https://www.youtube.com/watch?v=MMeJsyiiifM"></video>
+                <video id="video" src="assets/video/video2.mp4"></video>
             </div>
             <div class="video-tips">
                 <a onclick="openVideo()" class="video-popup" href="javascript:;">
@@ -97,13 +97,77 @@
                     </p>
                     <p>
                         Learning to ski can open doors to a lifetime of winter fun and connection to the mountains. Why
-                        learn to ski? Skiing offers many benefits. It’s a sport you can enjoy with friends as well as the
-                        entire family, young and old. You get access to unmatched mountain terrain. Skiing also gets your
+                        learn to ski? Skiing offers many benefits. It’s a sport you can enjoy with friends as well as
+                        the
+                        entire family, young and old. You get access to unmatched mountain terrain. Skiing also gets
+                        your
                         heart rate up, burns calories and works your muscles.
 
                         To make sure you get the most out of your first time, here are a few tips for first-time skiers.
                     </p>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <ul class="tab_list">
+            <li class="active">
+                <span>1</span>
+            </li>
+            <li>
+                <span>2</span>
+            </li>
+            <li>
+                <span>3</span>
+            </li>
+        </ul>
+        <div class="tab_con">
+            <div class="tab_con__item" style="display:block;">
+                To get skiing, you will need the basic gear: skis, boots, and poles. Eric Lipton suggests that you
+                politely decline if a family member or friends offers to lend you some because resorts today are
+                equipped with the best rental equipment. They will also make sure you get the right size and style of
+                gear to ensure the best possible learning experience.
+
+                The boots are the first thing you’ll try on, they are also the most important piece of equipment. To
+                properly fit your ski boots, start with one pair of thin socks pulled up over your calves. Slide your
+                feet into the boot and press your heel towards the back of the boot. Start by tightening the buckles on
+                the upper cuff to ensure your heels are all the way back and all the way down. The boot should feel snug
+                (but not painful) around your foot and lower leg. If you can slide your foot back and forth inside the
+                boot, chances are the boot is too big. If your toes are squished or curled, you might need a bigger
+                size. Try on a few different sizes to make sure you have the best possible fit.
+
+                Next up, let’s talk about your skis. The front of the ski is called the tip and the back of the ski is
+                called the tail. Somewhere between the tip and the tail you’ll find the ski binding; bindings are what
+                connects your boot to the ski.When your boot is not pressed into the binding, you’ll notice the ski
+                brake preventing your skis from sliding. Unlike boots, there is no right or left ski, they are
+                interchangeable.
+            </div>
+            <div class="tab_con__item">
+                Before you head to the top of a hill, start with pushing your way around on the flats. Start with your
+                shins pressed against the front of your boots to stay forward and to stay balanced. This will also get
+                you used to the sensation of gliding around on snow.
+
+                Side-stepping is when you move with your skis perpendicular to the slope (meaning your skis pointed
+                across the hill instead of down the hill) and navigate up the hill. When you are in position, lean your
+                knees uphill and take small steps sideways. This can be useful when you have to get up a small incline
+                or if you drop a pole uphill and have to retrieve it.
+
+                The other way to move uphill is the herringbone or duck walk. For this move, make a V-shape with the
+                tails of your skis closer together than the tips. Flex your ankles forward and sink your knees inward,
+                this will create a wedge so you don’t slide backwards. From there, you can walk around almost anywhere.
+                Just make sure the tails of your skis don’t cross.
+            </div>
+            <div class="tab_con__item">
+                To turn your skis, start in a slight wedge position. To make a turn to the right, your left leg will
+                actually do most of the work. Turn your left leg more and put more weight on your left work. It’s the
+                opposite for a left turn. As always, keep your shins on pressed against the front of your boots.
+
+                To stop, do an exaggerated turn until you are completely perpendicular.
+
+                Getting on a chairlift is easy. Ski up to the line that usually says “Wait Here.” Once the chair in
+                front of you passes, follow that chair to the line that says “Load Here.” Wait for the chair to come
+                around, sit down, scoot all the way back, put the safety bar down and enjoy the ride!
             </div>
         </div>
     </div>
@@ -126,6 +190,22 @@
         e.style.display = 'none'
         video.pause()
     }
+
+    let tab_list = document.querySelector('.tab_list')
+    let tab_list_item = tab_list.querySelectorAll('li')
+    let tab_con__item = document.querySelectorAll('.tab_con__item')
+    for (let i = 0; i < tab_list_item.length; i++) {
+        tab_list_item[i].setAttribute('index', i)
+        tab_list_item[i].onclick = function () {
+            for (let j = 0; j < tab_list_item.length; j++) {
+                tab_list_item[j].className = ''
+                tab_con__item[j].style.display = 'none'
+            }
+            this.className = 'active'
+            tab_con__item[i].style.display = 'block'
+        }
+    }
+
 </script>
 </body>
 </html>
